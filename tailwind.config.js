@@ -23,39 +23,43 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "hsl(0 0% 13%)",
+        input: "hsl(0 0% 13%)",
+        ring: "hsl(0 0% 20%)",
+        background: "hsl(0 0% 4%)",
+        foreground: "hsl(0 0% 96%)",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(0 0% 100%)",
+          foreground: "hsl(0 0% 4%)",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(0 0% 10%)",
+          foreground: "hsl(0 0% 63%)",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "hsl(0 62% 30%)",
+          foreground: "hsl(0 0% 96%)",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "hsl(0 0% 10%)",
+          foreground: "hsl(0 0% 33%)",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "hsl(0 0% 10%)",
+          foreground: "hsl(0 0% 96%)",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "hsl(0 0% 7%)",
+          foreground: "hsl(0 0% 96%)",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "hsl(0 0% 9%)",
+          foreground: "hsl(0 0% 96%)",
         },
+      },
+      fontFamily: {
+        // sans: ["Montserrat", "sans-serif"], // change font default
+        brand: ["Montserrat", "sans-serif"], // change font logo/brand
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
@@ -65,20 +69,20 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {height: 0},
+          to: {height: "var(--radix-accordion-content-height)"},
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          from: {height: "var(--radix-accordion-content-height)"},
+          to: {height: 0},
         },
         "collapsible-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-collapsible-content-height)" },
+          from: {height: 0},
+          to: {height: "var(--radix-collapsible-content-height)"},
         },
         "collapsible-up": {
-          from: { height: "var(--radix-collapsible-content-height)" },
-          to: { height: 0 },
+          from: {height: "var(--radix-collapsible-content-height)"},
+          to: {height: 0},
         },
       },
       animation: {

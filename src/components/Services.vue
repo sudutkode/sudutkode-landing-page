@@ -5,42 +5,38 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
-import { Badge } from "@/components/ui/badge";
-
-enum ProService {
-  YES = 1,
-  NO = 0,
-}
+import { Monitor, Smartphone, Palette, MessageSquare } from "lucide-vue-next";
 
 interface ServiceProps {
+  icon: any;
   title: string;
-  pro: ProService;
   description: string;
 }
 
-const serviceList: ServiceProps[] = [
+const services: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    icon: Monitor,
+    title: "Web Development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
-    pro: 0,
+      "Company profiles, landing pages, e-commerce platforms, and responsive modern web portals.",
   },
   {
-    title: "Social Media Integrations",
+    icon: Smartphone,
+    title: "Mobile Apps",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
-    pro: 0,
+      "Native-performing Android and iOS applications built with React Native.",
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
+    icon: Palette,
+    title: "UI/UX Design",
+    description:
+      "Intuitive interface design — from wireframes to consistent design systems.",
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
+    icon: MessageSquare,
+    title: "Technology Consulting",
+    description:
+      "Help you choose the right tech stack, system architecture, and product roadmap.",
   },
 ];
 </script>
@@ -48,41 +44,28 @@ const serviceList: ServiceProps[] = [
 <template>
   <section
     id="services"
-    class="container py-24 sm:py-32"
+    class="container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40"
   >
-    <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-      Services
-    </h2>
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+        Our Services
+      </h2>
+    </div>
 
-    <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      Grow Your Business
-    </h2>
-    <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      From marketing and sales to operations and strategy, we have the expertise
-      to help you achieve your goals.
-    </h3>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-
-    <div
-      class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto"
-    >
-      <div
-        v-for="{ title, description, pro } in serviceList"
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <Card
+        v-for="{ icon: Icon, title, description } in services"
         :key="title"
+        class="border-border hover:bg-card/80 transition-colors"
       >
-        <Card class="bg-muted/60 dark:bg-card h-full relative">
-          <CardHeader>
-            <CardTitle>{{ title }}</CardTitle>
-            <CardDescription>{{ description }}</CardDescription>
-          </CardHeader>
-          <Badge
-            v-if="pro === ProService.YES"
-            variant="secondary"
-            class="absolute -top-2 -right-3"
-            >PRO</Badge
-          >
-        </Card>
-      </div>
+        <CardHeader>
+          <div class="mb-4">
+            <Icon class="h-8 w-8 text-foreground" />
+          </div>
+          <CardTitle>{{ title }}</CardTitle>
+          <CardDescription>{{ description }}</CardDescription>
+        </CardHeader>
+      </Card>
     </div>
   </section>
 </template>

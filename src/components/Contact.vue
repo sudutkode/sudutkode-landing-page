@@ -1,201 +1,150 @@
 <script setup lang="ts">
 import { ref, reactive } from "vue";
-import { Button } from "./ui/button";
-import { Card, CardHeader, CardContent, CardFooter } from "./ui/card";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./ui/select";
-import { Textarea } from "./ui/textarea";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
-import { AlertCircle, Building2, Phone, Mail, Clock } from "lucide-vue-next";
-
-interface ContactFormeProps {
-  firstName: string;
-  lastName: string;
+interface ContactFormData {
+  name: string;
   email: string;
-  subject: string;
   message: string;
 }
 
-const contactForm = reactive<ContactFormeProps>({
-  firstName: "",
-  lastName: "",
+const form = reactive<ContactFormData>({
+  name: "",
   email: "",
-  subject: "Web Development",
   message: "",
 });
 
-const invalidInputForm = ref<boolean>(false);
+const errors = ref<Partial<ContactFormData>>({});
+
+const validateForm = () => {
+  errors.value = {};
+
+  if (!form.name.trim()) {
+    errors.value.name = "Name is required";
+  }
+
+  if (!form.email.trim()) {
+    errors.value.email = "Email is required";
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+    errors.value.email = "Invalid email address";
+  }
+
+  if (!form.message.trim()) {
+    errors.value.message = "Message is required";
+  }
+
+  return Object.keys(errors.value).length === 0;
+};
 
 const handleSubmit = () => {
-  const { firstName, lastName, email, subject, message } = contactForm;
-  console.log(contactForm);
-
-  const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
-
-  window.location.href = mailToLink;
+  if (validateForm()) {
+    console.log("Form submitted:", form);
+    // TODO: Send form data to backend or email service
+    alert("Thank you! Your message has been sent.");
+    form.name = "";
+    form.email = "";
+    form.message = "";
+  }
 };
 </script>
 
 <template>
   <section
     id="contact"
-    class="container py-24 sm:py-32"
+    class="container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40"
   >
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <div class="mb-4">
-          <h2 class="text-lg text-primary mb-2 tracking-wider">Contact</h2>
+    <div class="max-w-2xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-12">
+        Start a Project With Us
+      </h2>
 
-          <h2 class="text-3xl md:text-4xl font-bold">Connect With Us</h2>
-        </div>
-        <p class="mb-8 text-muted-foreground lg:w-5/6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          ipsam sint enim exercitationem ex autem corrupti quas tenetur
-        </p>
-
-        <div class="flex flex-col gap-4">
-          <div>
-            <div class="flex gap-2 mb-1">
-              <Building2 />
-              <div class="font-bold">Find Us</div>
-            </div>
-
-            <div>742 Evergreen Terrace, Springfield, IL 62704</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2 mb-1">
-              <Phone />
-              <div class="font-bold">Call Us</div>
-            </div>
-
-            <div>+1 (619) 123-4567</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2 mb-1">
-              <Mail />
-              <div class="font-bold">Mail Us</div>
-            </div>
-
-            <div>leomirandadev@gmail.com</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2">
-              <Clock />
-              <div class="font-bold">Visit Us</div>
-            </div>
-
-            <div>
-              <div>Monday - Friday</div>
-              <div>8AM - 4PM</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- form -->
-      <Card class="bg-muted/60 dark:bg-card">
-        <CardHeader class="text-primary text-2xl"> </CardHeader>
-        <CardContent>
-          <form
-            @submit.prevent="handleSubmit"
-            class="grid gap-4"
+      <!-- Contact Form -->
+      <form
+        @submit.prevent="handleSubmit"
+        class="space-y-6"
+      >
+        <!-- Name Field -->
+        <div class="space-y-2">
+          <Label
+            for="name"
+            class="text-left block"
           >
-            <div class="flex flex-col md:flex-row gap-8">
-              <div class="flex flex-col w-full gap-1.5">
-                <Label for="first-name">First Name</Label>
-                <Input
-                  id="first-name"
-                  type="text"
-                  placeholder="Leopoldo"
-                  v-model="contactForm.firstName"
-                />
-              </div>
+            Name
+          </Label>
+          <Input
+            id="name"
+            v-model="form.name"
+            type="text"
+            placeholder="Your Name"
+            class="w-full"
+          />
+          <p
+            v-if="errors.name"
+            class="text-sm text-destructive"
+          >
+            {{ errors.name }}
+          </p>
+        </div>
 
-              <div class="flex flex-col w-full gap-1.5">
-                <Label for="last-name">Last Name</Label>
-                <Input
-                  id="last-name"
-                  type="text"
-                  placeholder="Miranda"
-                  v-model="contactForm.lastName"
-                />
-              </div>
-            </div>
+        <!-- Email Field -->
+        <div class="space-y-2">
+          <Label
+            for="email"
+            class="text-left block"
+          >
+            Email
+          </Label>
+          <Input
+            id="email"
+            v-model="form.email"
+            type="email"
+            placeholder="email@example.com"
+            class="w-full"
+          />
+          <p
+            v-if="errors.email"
+            class="text-sm text-destructive"
+          >
+            {{ errors.email }}
+          </p>
+        </div>
 
-            <div class="flex flex-col gap-1.5">
-              <Label for="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="leomirandadev@gmail.com"
-                v-model="contactForm.email"
-              />
-            </div>
+        <!-- Message Field -->
+        <div class="space-y-2">
+          <Label
+            for="message"
+            class="text-left block"
+          >
+            Message
+          </Label>
+          <Textarea
+            id="message"
+            v-model="form.message"
+            placeholder="Describe your project or question..."
+            rows="5"
+            class="w-full resize-none"
+          />
+          <p
+            v-if="errors.message"
+            class="text-sm text-destructive"
+          >
+            {{ errors.message }}
+          </p>
+        </div>
 
-            <div class="flex flex-col gap-1.5">
-              <Label for="subject">Subject</Label>
-
-              <Select v-model="contactForm.subject">
-                <SelectTrigger>
-                  <SelectValue placeholder="Select a subject" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectItem value="Web Development">
-                      Web Development
-                    </SelectItem>
-                    <SelectItem value="Mobile Development">
-                      Mobile Development
-                    </SelectItem>
-                    <SelectItem value="Figma Design"> Figma Design </SelectItem>
-                    <SelectItem value="REST API "> REST API </SelectItem>
-                    <SelectItem value="FullStack Project">
-                      FullStack Project
-                    </SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div class="flex flex-col gap-1.5">
-              <Label for="message">Message</Label>
-              <Textarea
-                id="message"
-                placeholder="Your message..."
-                rows="5"
-                v-model="contactForm.message"
-              />
-            </div>
-
-            <Alert
-              v-if="invalidInputForm"
-              variant="destructive"
-            >
-              <AlertCircle class="w-4 h-4" />
-              <AlertTitle>Error</AlertTitle>
-              <AlertDescription>
-                There is an error in the form. Please check your input.
-              </AlertDescription>
-            </Alert>
-
-            <Button class="mt-4">Send message</Button>
-          </form>
-        </CardContent>
-
-        <CardFooter></CardFooter>
-      </Card>
-    </section>
+        <!-- Submit Button -->
+        <Button
+          type="submit"
+          size="lg"
+          class="w-full md:w-auto"
+        >
+          Send Message
+        </Button>
+      </form>
+    </div>
   </section>
 </template>

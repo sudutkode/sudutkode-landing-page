@@ -1,57 +1,135 @@
-# Shadcn/Vue Landing Page Template
+# SudutKode — Landing Page
 
-## <a href="https://www.shadcn-vue.com/" target="_blank">Shadcn-Vue</a> + <a href="https://vuejs.org/" target="_blank">Vue.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+Official landing page for **SudutKode**, an Indonesian software house focused on mobile and web application development.
 
-![Alt text](./public/demo-img.jpg)
-Live demo is now available: <a href="https://shadcn-vue-landing-page.vercel.app" target="_blank">Live Demo</a>
+Built on top of the [shadcn-vue-landing-page](https://github.com/leoMirandaa/shadcn-vue-landing-page) template — Vue 3 + Vite + Tailwind CSS + shadcn/ui.
 
-## Sections
+---
 
-- [x] Navbar
-- [x] Sidebar(mobile)
-- [x] Hero
-- [x] Sponsors
-- [x] Benefits
-- [x] Features
-- [x] Services
-- [x] HowItWorks
-- [x] Testimonials
-- [x] Pricing
-- [x] Frequently Asked Questions(FAQ)
-- [x] Team
-- [x] Community
-- [x] Contact
-- [x] Footer
+## Tech Stack
 
-## Features
+| Layer         | Technology                |
+| ------------- | ------------------------- |
+| Framework     | Vue 3 (Composition API)   |
+| Build Tool    | Vite                      |
+| Styling       | Tailwind CSS              |
+| UI Components | shadcn/ui (Vue port)      |
+| Font          | Montserrat (Google Fonts) |
+| Icons         | Lucide Vue                |
 
-- [x] Fully Responsive Design
-- [x] User Friendly Navigation
-- [x] Dark Mode
-- [x] Meta tags
+---
 
-## How to install
-
-1. Clone this repositoy:
+## Getting Started
 
 ```bash
-git clone https://github.com/leoMirandaa/shadcn-vue-landing-page.git
+# Clone repo
+git clone https://github.com/your-org/sudut-kode-landing.git
+cd sudut-kode-landing
+
+# Install dependencies
+bun install
+
+# Run dev server
+bun dev
+
+# Build for production
+bun build
+
+# Preview build result
+bun preview
 ```
 
-2. Go into project
+---
+
+## Project Structure
+
+```
+src/
+├── App.vue                  # Root — determines section order
+├── assets/
+│   ├── index.css            # Global styles + import Montserrat
+│   └── icon.ico             # SudutKode Favicon
+├── components/
+│   ├── Navbar.vue
+│   ├── Hero.vue
+│   ├── About.vue            # New component — not in original template
+│   ├── Services.vue
+│   ├── Products.vue         # New component — not in original template
+│   ├── Team.vue
+│   ├── Contact.vue
+│   ├── Footer.vue
+│   └── ui/                  # Base shadcn/ui components
+├── icons/                   # Social media icons (GitHub, LinkedIn, etc.)
+└── lib/
+    └── utils.ts
+
+public/
+├── images/
+│   ├── uangku/              # UangKu app screenshots
+│   │   ├── screen-1.png
+│   │   ├── screen-2.png
+│   │   └── screen-3.png
+│   └── team/                # Team member photos
+│       └── [name].jpg
+└── favicon.ico
+```
+
+---
+
+## Design System Configuration
+
+### Colors
+
+The color system uses CSS variables via Tailwind. Currently **monochrome** (black and white). Brand accent colors will be added after final visual identity confirmation.
+
+To change accent colors, update the following values in `tailwind.config.js`:
+
+```js
+accent: {
+  DEFAULT: "hsl(...)", // ganti dengan warna brand
+  foreground: "hsl(0 0% 96%)",
+},
+primary: {
+  DEFAULT: "hsl(...)", // ganti dengan warna brand
+  foreground: "hsl(0 0% 4%)",
+},
+```
+
+### Font
+
+Uses **Montserrat** from Google Fonts for all text including brand name.
+
+---
+
+## Featured Products
+
+### UangKu
+
+- Category: Mobile App — Personal Finance Tracker
+- Platform: Android
+- Status: Available
+- Screenshots: `public/images/uangku/`
+
+> The second product is in development and will be added to the Products section when ready.
+
+---
+
+## Deployment
+
+Recommended to use **Vercel** or **Netlify**.
 
 ```bash
-cd shadcn-vue-landing-page
+# Build
+bun run build
+
+# Output is in the dist/ folder
+# Upload dist/ to Netlify, or push to GitHub and connect to Vercel
 ```
 
-3. Install dependencies
+---
 
-```bash
-npm install
-```
+## Important Notes
 
-4. Run project
-
-```bash
-npm run dev
-```
+- Dark mode is permanently active — the `dark` class is added to the `<html>` tag in `index.html`
+- Unused template components (`Pricing`, `FAQ`, `Sponsors`, etc.) are not deleted from disk, just not imported in `App.vue`
+- UangKu download link currently uses Google Drive. Final target: Google Play Store

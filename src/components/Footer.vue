@@ -1,164 +1,99 @@
 <script setup lang="ts">
-import { ChevronsDown } from "lucide-vue-next";
-import Separator from "./ui/separator/Separator.vue";
+import LinkedInIcon from "@/icons/LinkedInIcon.vue";
+import GithubIcon from "@/icons/GithubIcon.vue";
+
+interface NavLink {
+  label: string;
+  href: string;
+}
+
+const navLinks: NavLink[] = [
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Products", href: "#products" },
+  { label: "Team", href: "#team" },
+];
+
+const socialLinks = [
+  {
+    icon: LinkedInIcon,
+    href: "#",
+    label: "LinkedIn",
+  },
+  {
+    icon: GithubIcon,
+    href: "#",
+    label: "GitHub",
+  },
+];
+
+const scrollToSection = (href: string) => {
+  const element = document.querySelector(href);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 
 <template>
   <footer
     id="footer"
-    class="container py-24 pb-16 sm:py-32 sm:pb-24"
+    class="border-t border-border"
   >
-    <div class="p-10 bg-muted/50 dark:bg-card border rounded-2xl">
-      <div
-        class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8"
-      >
-        <div class="col-span-full xl:col-span-2">
-          <a
-            href="#"
-            class="flex font-bold items-center"
-          >
-            <ChevronsDown
-              class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
-            />
-
-            <h3 class="text-2xl">Shadcn-Vue</h3>
-          </a>
-        </div>
-
-        <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Contact</h3>
+    <div class="container mx-auto px-4 md:px-6 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <!-- Brand Section -->
+        <div class="flex flex-col justify-between">
           <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Github
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Instagram
-            </a>
+            <h2 class="text-lg font-semibold mb-2">SudutKode</h2>
+            <p class="text-sm text-muted-foreground">
+              Indonesian software house building digital products that work.
+            </p>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
+        <!-- Navigation Links -->
+        <div class="flex flex-col justify-center">
+          <nav class="flex flex-col space-y-3">
+            <button
+              v-for="link in navLinks"
+              :key="link.href"
+              @click="scrollToSection(link.href)"
+              class="text-sm text-muted-foreground hover:text-foreground transition-colors text-left"
             >
-              iOS
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Android
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
+              {{ link.label }}
+            </button>
+          </nav>
         </div>
 
-        <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Help</h3>
-          <div>
+        <!-- Social Links -->
+        <div class="flex flex-col justify-center">
+          <div class="flex gap-4">
             <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
+              v-for="social in socialLinks"
+              :key="social.label"
+              :href="social.href"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-muted-foreground hover:text-foreground transition-colors"
+              :aria-label="social.label"
             >
-              Contact Us
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              FAQ
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Feedback
-            </a>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Socials</h3>
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Twitch
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Dribbble
+              <component
+                :is="social.icon"
+                class="h-5 w-5"
+              />
             </a>
           </div>
         </div>
       </div>
 
-      <Separator class="my-6" />
-      <section className="">
-        <h3 class="">
-          &copy; 2024 Designed and developed by
-          <a
-            target="_blank"
-            href="https://github.com/leoMirandaa"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
-        </h3>
-      </section>
+      <!-- Divider -->
+      <div class="border-t border-border pt-8">
+        <!-- Copyright -->
+        <p class="text-sm text-muted-foreground text-center">
+          © 2025 SudutKode. All rights reserved.
+        </p>
+      </div>
     </div>
   </footer>
 </template>
