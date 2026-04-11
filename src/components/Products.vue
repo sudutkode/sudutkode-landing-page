@@ -15,6 +15,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Bell, Wallet, BarChart3 } from "lucide-vue-next";
+import { usePageNav } from "@/composables/usePageNav";
 
 type ProductStatus = "available" | "coming-soon";
 
@@ -116,6 +117,12 @@ const getButtonText = (status: ProductStatus) => {
 const isButtonDisabled = (status: ProductStatus) => {
   return status === "coming-soon";
 };
+
+const { navigate } = usePageNav();
+
+const openPrivacyPolicy = (productId: string) => {
+  navigate(`${productId}/privacy-policy`);
+};
 </script>
 
 <template>
@@ -187,12 +194,13 @@ const isButtonDisabled = (status: ProductStatus) => {
                 </div>
               </div>
 
-              <!-- Download Button -->
-              <div class="mt-auto">
+              <!-- Download & Privacy Policy Buttons -->
+              <div class="mt-auto flex flex-col sm:flex-row gap-3">
                 <Button
                   size="lg"
                   :disabled="isButtonDisabled(product.status)"
                   :as-child="product.status === 'available'"
+                  class="flex-1"
                 >
                   <a
                     v-if="product.status === 'available'"
@@ -205,6 +213,14 @@ const isButtonDisabled = (status: ProductStatus) => {
                   <span v-else>
                     {{ getButtonText(product.status) }}
                   </span>
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  @click="openPrivacyPolicy(product.id)"
+                  class="flex-1 text-muted-foreground hover:text-foreground"
+                >
+                  Privacy Policy
                 </Button>
               </div>
             </div>

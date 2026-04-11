@@ -3,7 +3,7 @@
 ## SudutKode — Landing Page
 
 **Version:** 1.0.0
-**Date:** 2025
+**Date:** 2026
 **Status:** In Progress
 
 ---

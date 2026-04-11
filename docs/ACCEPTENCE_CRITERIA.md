@@ -3,7 +3,7 @@
 ## SudutKode — Landing Page
 
 **Version:** 1.0.0
-**Date:** 2025
+**Date:** 2026
 
 This document defines the conditions that must be met for each landing page section to be considered complete and production-ready.
 
@@ -123,7 +123,7 @@ This document defines the conditions that must be met for each landing page sect
 - [ ] SudutKode logo or name displays
 - [ ] Navigation links available (About, Services, Products, Team)
 - [ ] Social media links available and working
-- [ ] Copyright text displays: `© 2025 SudutKode. All rights reserved.`
+- [ ] Copyright text displays: `© 2026 SudutKode. All rights reserved.`
 - [ ] Responsive display
 
 ---

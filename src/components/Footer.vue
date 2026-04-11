@@ -47,7 +47,7 @@ const scrollToSection = (href: string) => {
           <div>
             <h2 class="text-lg font-semibold mb-2">SudutKode</h2>
             <p class="text-sm text-muted-foreground">
-              Indonesian software house building digital products that work.
+              Indonesian software house building digital products for businesses and humans.
             </p>
           </div>
         </div>
@@ -91,7 +91,7 @@ const scrollToSection = (href: string) => {
       <div class="border-t border-border pt-8">
         <!-- Copyright -->
         <p class="text-sm text-muted-foreground text-center">
-          © 2025 SudutKode. All rights reserved.
+          © 2026 SudutKode. All rights reserved.
         </p>
       </div>
     </div>
