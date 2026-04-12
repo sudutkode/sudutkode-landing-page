@@ -4,40 +4,82 @@ Official landing page for **SudutKode**, an Indonesian software house focused on
 
 Built on top of the [shadcn-vue-landing-page](https://github.com/leoMirandaa/shadcn-vue-landing-page) template — Vue 3 + Vite + Tailwind CSS + shadcn/ui.
 
+**SEO Status:** ✅ **Fully Optimized for Google Search** (Indonesian keywords: "software house indonesia", "jasa pembuatan aplikasi", etc.)
+
 ---
 
 ## Tech Stack
 
-| Layer         | Technology                |
-| ------------- | ------------------------- |
-| Framework     | Vue 3 (Composition API)   |
-| Build Tool    | Vite                      |
-| Styling       | Tailwind CSS              |
-| UI Components | shadcn/ui (Vue port)      |
-| Font          | Montserrat (Google Fonts) |
-| Icons         | Lucide Vue                |
+| Layer         | Technology                                 |
+| ------------- | ------------------------------------------ |
+| Framework     | Vue 3 (Composition API)                    |
+| Build Tool    | Vite (v5.4.0)                              |
+| Styling       | Tailwind CSS                               |
+| UI Components | shadcn/ui (Vue port)                       |
+| Font          | Montserrat (Google Fonts)                  |
+| Icons         | Lucide Vue                                 |
+| SEO Ready     | Yes (structured data, sitemap, robots.txt) |
 
 ---
 
-## Getting Started
+## Quick Start
 
 ```bash
-# Clone repo
-git clone https://github.com/your-org/sudut-kode-landing.git
-cd sudut-kode-landing
-
 # Install dependencies
-bun run install
+npm install
+# or
+bun install
 
-# Run dev server
-bun run dev
+# Development server
+npm run dev
 
-# Build for production
-bun run build
+# Production build
+npm run build
 
-# Preview build result
-bun run preview
+# Preview production build
+npm run preview
 ```
+
+---
+
+## SEO Optimization (April 2026)
+
+This landing page has been **comprehensively optimized for Google Search** with special focus on Indonesian keywords.
+
+### Features
+
+- ✅ **Optimized Meta Tags** — Title, description, keywords for "software house indonesia", "jasa pembuatan aplikasi", etc.
+- ✅ **Structured Data** — LocalBusiness, Organization, SoftwareApplication, BreadcrumbList schemas
+- ✅ **Sitemaps** — XML sitemap + robots.txt for search engine discovery
+- ✅ **Social Sharing** — Open Graph & Twitter Cards for rich previews
+- ✅ **Local SEO** — Location targeting (Papua Barat, Indonesia)
+- ✅ **Performance** — Optimized build, preconnect to fonts, security headers
+- ✅ **Analytics Ready** — Structure for Google Analytics integration
+
+### Target Keywords
+
+**Primary:**
+
+- software house
+- software house indonesia
+- jasa pembuatan aplikasi
+- jasa pembuatan website
+- software house papua barat
+
+**Secondary:**
+
+- jasa aplikasi android indonesia
+- jasa aplikasi mobile indonesia
+- konsultan teknologi indonesia
+- software house terpercaya
+
+### Documentation
+
+See the [SEO Strategy Guide](docs/SEO_STRATEGY.md) for complete implementation details.
+
+For Google Search Console setup, see [SEO Deployment Guide](docs/SEO_DEPLOYMENT_GUIDE.md).
+
+Quick checklist: [Implementation Checklist](docs/IMPLEMENTATION_CHECKLIST.md)
 
 ---
 
@@ -45,34 +87,83 @@ bun run preview
 
 ```
 src/
-├── App.vue                  # Root — determines section order
-├── assets/
-│   ├── index.css            # Global styles + import Montserrat
-│   └── icon.ico             # SudutKode Favicon
+├── App.vue                    # Root component with navigation state
+├── composables/
+│   └── usePageNav.ts          # Navigation state management
 ├── components/
 │   ├── Navbar.vue
 │   ├── Hero.vue
-│   ├── About.vue            # New component — not in original template
+│   ├── About.vue
 │   ├── Services.vue
-│   ├── Products.vue         # New component — not in original template
+│   ├── Products.vue           # Product showcase with privacy policy link
+│   ├── PrivacyPolicy.vue      # Full-screen privacy policy page
 │   ├── Team.vue
 │   ├── Contact.vue
 │   ├── Footer.vue
-│   └── ui/                  # Base shadcn/ui components
-├── icons/                   # Social media icons (GitHub, LinkedIn, etc.)
-└── lib/
-    └── utils.ts
+│   └── ui/                    # Base shadcn/ui components
+├── lib/
+│   ├── utils.ts
+│   └── seo.ts                 # SEO utilities and configuration
+├── icons/                     # Social media icons
+└── assets/
+    └── index.css              # Global styles
 
 public/
-├── images/
-│   ├── uangku/              # UangKu app screenshots
-│   │   ├── screen-1.png
-│   │   ├── screen-2.png
-│   │   └── screen-3.png
-│   └── team/                # Team member photos
-│       └── [name].jpg
-└── favicon.ico
+├── robots.txt                 # Search engine crawling rules
+├── sitemap.xml                # XML sitemap for discovery
+├── projects/                  # Product images
+│   └── uangku/                # UangKu app screenshots
+└── team/                      # Team member photos
+
+docs/
+├── BRIEF.md                   # Creative brief & vision
+├── PRD.md                     # Product requirements
+├── ACCEPTENCE_CRITERIA.md     # Completion criteria
+├── SEO_STRATEGY.md            # Complete SEO strategy (✨ NEW)
+├── SEO_DEPLOYMENT_GUIDE.md    # Google & analytics setup (✨ NEW)
+├── SEO_SUMMARY.md             # Quick reference (✨ NEW)
+└── IMPLEMENTATION_CHECKLIST.md # Verification checklist (✨ NEW)
 ```
+
+---
+
+## New Features (April 2026)
+
+### 1. Privacy Policy System
+
+- Full-screen privacy policy page for products
+- Bilingual (Bahasa Indonesia + English)
+- Accessible via `/[productId]/privacy-policy` routes
+- "Privacy Policy" link in Products section
+
+**Files:**
+
+- `src/components/PrivacyPolicy.vue` — Privacy policy component
+- `src/composables/usePageNav.ts` — Navigation state management
+- Updated: `src/App.vue`, `src/components/Products.vue`
+
+### 2. SEO Optimization Suite
+
+- Comprehensive meta tags (title, description, keywords)
+- 4 types of structured data (JSON-LD)
+- XML sitemap with image references
+- robots.txt for crawler guidance
+- Open Graph & Twitter Card tags
+- Performance optimization (preconnect, minification)
+
+**Files:**
+
+- Enhanced: `index.html` — Full SEO head section
+- Created: `public/robots.txt`, `public/sitemap.xml`
+- Created: `src/lib/seo.ts` — SEO utilities
+- Updated: `vite.config.ts` — Build optimization
+
+### 3. Documentation
+
+- `docs/SEO_STRATEGY.md` — 300+ line SEO guide
+- `docs/SEO_DEPLOYMENT_GUIDE.md` — Google Search Console setup
+- `docs/SEO_SUMMARY.md` — Executive summary
+- `docs/IMPLEMENTATION_CHECKLIST.md` — Verification checklist
 
 ---
 

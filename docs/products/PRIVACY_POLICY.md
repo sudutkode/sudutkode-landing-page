@@ -18,8 +18,8 @@ Dengan menggunakan Aplikasi, Anda menyetujui ketentuan dalam Kebijakan Privasi i
 ### 1. Pengembang Aplikasi
 
 **Nama:** SudutKode
-**Email:** [EMAIL_KONTAK_SUDUTKODE]
-**Website:** [URL_LANDING_PAGE_SUDUTKODE]
+**Email:** sudutkode@gmail.com
+**Website:** https://sudutkode.web.app
 
 ---
 
@@ -117,8 +117,8 @@ Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu. Perubahan signifikan
 
 Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi kami:
 
-**Email:** [EMAIL_KONTAK_SUDUTKODE]
-**Website:** [URL_LANDING_PAGE_SUDUTKODE]
+**Email:** sudutkode@gmail.com
+**Website:** https://sudutkode.web.app
 
 ---
 
@@ -135,8 +135,8 @@ By using the App, you agree to the terms of this Privacy Policy.
 ### 1. Developer Information
 
 **Name:** SudutKode
-**Email:** [EMAIL_KONTAK_SUDUTKODE]
-**Website:** [URL_LANDING_PAGE_SUDUTKODE]
+**Email:** sudutkode@gmail.com
+**Website:** https://sudutkode.web.app
 
 ---
 
@@ -234,5 +234,5 @@ We may update this Privacy Policy at any time. Significant changes will be commu
 
 If you have any questions about this Privacy Policy, please contact us:
 
-**Email:** [EMAIL_KONTAK_SUDUTKODE]
-**Website:** [URL_LANDING_PAGE_SUDUTKODE]
+**Email:** sudutkode@gmail.com
+**Website:** https://sudutkode.web.app

@@ -42,10 +42,7 @@ const services: ServiceProps[] = [
 </script>
 
 <template>
-  <section
-    id="services"
-    class="container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40"
-  >
+  <section id="services" class="container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40">
     <div class="max-w-3xl mx-auto text-center mb-12">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
         Our Services
@@ -53,11 +50,8 @@ const services: ServiceProps[] = [
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-      <Card
-        v-for="{ icon: Icon, title, description } in services"
-        :key="title"
-        class="border-border hover:bg-card/80 transition-colors"
-      >
+      <Card v-for="{ icon: Icon, title, description } in services" :key="title"
+        class="border-border hover:bg-card/80 transition-colors">
         <CardHeader>
           <div class="mb-4">
             <Icon class="h-8 w-8 text-foreground" />

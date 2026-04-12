@@ -1,46 +1,184 @@
 <!doctype html>
 <html lang="en" class="dark">
   <head>
+    <!-- Charset & Viewport -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/icon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SudutKode — Indonesian Software House</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="SudutKode — Indonesian Software House" />
+    <!-- Primary SEO Meta Tags — Bilingual: English + Indonesian Keywords, Jakarta-Based Identity -->
+    <title>
+      SudutKode — Software House Jakarta | Mobile App & Web Development
+    </title>
+    <meta
+      name="title"
+      content="SudutKode — Software House Jakarta | Mobile App & Web Development"
+    />
     <meta
       name="description"
-      content="SudutKode builds purposeful digital products — from mobile apps to websites. An Indonesian software house focused on quality, clarity, and long-term value."
+      content="SudutKode adalah software house Jakarta yang membangun aplikasi mobile dan website berkualitas tinggi. World-class products built by Indonesian team — jasa pembuatan aplikasi, web development, dan technology consulting."
+    />
+    <meta
+      name="keywords"
+      content="software house, software house indonesia, software house jakarta, mobile app development, web development, react native development, mvp development, product studio, jasa pembuatan aplikasi android, jasa pembuatan aplikasi, jasa pembuatan website, jasa aplikasi android jakarta, konsultasi teknologi, software house terpercaya"
+    />
+    <meta name="author" content="SudutKode" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="id, en" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sudutkode.web.app" />
+
+    <!-- Alternate Language Links — Bilingual EN + ID strategy -->
+    <link rel="alternate" hreflang="en" href="https://sudutkode.web.app" />
+    <link rel="alternate" hreflang="id" href="https://sudutkode.web.app" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://sudutkode.web.app"
     />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/src/assets/icon.ico" />
+    <link rel="apple-touch-icon" href="/src/assets/icon.ico" />
+
+    <!-- Open Graph Meta Tags — Bilingual social sharing, EN + ID -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SudutKode" />
     <meta property="og:url" content="https://sudutkode.web.app" />
-    <meta property="og:title" content="SudutKode — Indonesian Software House" />
+    <meta property="og:title" content="SudutKode — Software House Jakarta" />
     <meta
       property="og:description"
-      content="SudutKode builds purposeful digital products — from mobile apps to websites. An Indonesian software house focused on quality, clarity, and long-term value."
+      content="World-class mobile apps and websites built by Indonesian team. Aplikasi mobile dan website berkualitas tinggi dari Jakarta."
     />
     <meta
       property="og:image"
       content="https://sudutkode.web.app/sudut-kode-logo.png"
     />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="SudutKode — Software House Jakarta"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="id_ID" />
 
-    <!-- Twitter -->
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://sudutkode.web.app" />
-    <meta
-      name="twitter:title"
-      content="SudutKode — Indonesian Software House"
-    />
+    <meta name="twitter:title" content="SudutKode — Software House Jakarta" />
     <meta
       name="twitter:description"
-      content="SudutKode builds purposeful digital products — from mobile apps to websites. An Indonesian software house focused on quality, clarity, and long-term value."
+      content="Mobile apps and websites built with purpose. Aplikasi mobile dan website berkualitas dari Jakarta."
     />
     <meta
       name="twitter:image"
       content="https://sudutkode.web.app/sudut-kode-logo.png"
     />
+    <meta name="twitter:creator" content="@sudutkode" />
+
+    <!-- Organization Structured Data (JSON-LD) — Bilingual with Jakarta address -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SudutKode",
+        "alternateName": [
+          "SudutKode Software House",
+          "Sudut Kode",
+          "SudutKode Jakarta"
+        ],
+        "url": "https://sudutkode.web.app",
+        "logo": "https://sudutkode.web.app/sudut-kode-logo.png",
+        "description": "SudutKode adalah software house berbasis Jakarta yang mengembangkan aplikasi mobile dan website berkualitas tinggi. We specialize in mobile app development, web development, React Native, MVP development, and technology consulting for startups and businesses.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jakarta",
+          "addressRegion": "Jakarta",
+          "addressCountry": "ID"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "halo@sudutkode.com",
+          "availableLanguage": ["en", "id"]
+        },
+        "sameAs": ["https://github.com/sudutkode"],
+        "knowsAbout": [
+          "Mobile App Development",
+          "Web Development",
+          "React Native",
+          "UI/UX Design",
+          "Technology Consulting",
+          "Startup MVP Development",
+          "Product Studio"
+        ]
+      }
+    </script>
+
+    <!-- WebSite Structured Data (JSON-LD) — Bilingual explicit (EN primary, ID alternate) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SudutKode",
+        "url": "https://sudutkode.web.app",
+        "inLanguage": ["en", "id"]
+      }
+    </script>
+
+    <!-- LocalBusiness Structured Data (JSON-LD) — Jakarta-based, Serving Indonesia + Worldwide -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "SudutKode",
+        "description": "Software house Jakarta yang fokus pada pengembangan mobile app dan website berkualitas tinggi untuk startup dan bisnis. Indonesian team building world-class products.",
+        "url": "https://sudutkode.web.app",
+        "telephone": "+62",
+        "email": "halo@sudutkode.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jakarta",
+          "addressRegion": "Jakarta",
+          "addressCountry": "ID"
+        },
+        "areaServed": [
+          {"@type": "Country", "name": "Indonesia"},
+          {"@type": "Place", "name": "Asia Pacific"},
+          {"@type": "Place", "name": "Worldwide"}
+        ],
+        "priceRange": "$$",
+        "image": "https://sudutkode.web.app/sudut-kode-logo.png",
+        "knowsAbout": [
+          "Mobile App Development",
+          "Web Development",
+          "React Native",
+          "MVPs",
+          "UI/UX Design",
+          "Technology Consulting"
+        ],
+        "serviceType": [
+          "Mobile Application Development",
+          "Web Development Services",
+          "UI/UX Design",
+          "Technology Consulting",
+          "Startup MVP Development",
+          "Product Studio"
+        ]
+      }
+    </script>
+
+    <!-- Additional Meta Tags for SEO -->
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="msapplication-TileColor" content="#0a0a0a" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- Preconnect to External Resources (Performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div id="app"></div>

@@ -66,8 +66,8 @@ const getProductName = (productId: string) => {
               <h2 class="text-xl font-semibold">1. Pengembang Aplikasi</h2>
               <div class="space-y-2 text-muted-foreground">
                 <p><strong>Nama:</strong> SudutKode</p>
-                <p><strong>Email:</strong> <span class="text-amber-600">[EMAIL_KONTAK_SUDUTKODE]</span></p>
-                <p><strong>Website:</strong> <span class="text-amber-600">[URL_LANDING_PAGE_SUDUTKODE]</span></p>
+                <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
+                <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
               </div>
             </section>
 
@@ -235,8 +235,8 @@ const getProductName = (productId: string) => {
                 Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi kami:
               </p>
               <div class="space-y-2 text-sm text-muted-foreground">
-                <p><strong>Email:</strong> <span class="text-amber-600">[EMAIL_KONTAK_SUDUTKODE]</span></p>
-                <p><strong>Website:</strong> <span class="text-amber-600">[URL_LANDING_PAGE_SUDUTKODE]</span></p>
+                <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
+                <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
               </div>
             </section>
           </div>
@@ -277,8 +277,8 @@ const getProductName = (productId: string) => {
               <h2 class="text-xl font-semibold">1. Developer Information</h2>
               <div class="space-y-2 text-muted-foreground">
                 <p><strong>Name:</strong> SudutKode</p>
-                <p><strong>Email:</strong> <span class="text-amber-600">[EMAIL_KONTAK_SUDUTKODE]</span></p>
-                <p><strong>Website:</strong> <span class="text-amber-600">[URL_LANDING_PAGE_SUDUTKODE]</span></p>
+                <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
+                <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
               </div>
             </section>
 
@@ -445,8 +445,8 @@ const getProductName = (productId: string) => {
                 If you have any questions about this Privacy Policy, please contact us:
               </p>
               <div class="space-y-2 text-sm text-muted-foreground">
-                <p><strong>Email:</strong> <span class="text-amber-600">[EMAIL_KONTAK_SUDUTKODE]</span></p>
-                <p><strong>Website:</strong> <span class="text-amber-600">[URL_LANDING_PAGE_SUDUTKODE]</span></p>
+                <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
+                <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
               </div>
             </section>
           </div>

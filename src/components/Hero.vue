@@ -25,17 +25,10 @@ const { scrollToSection } = useScrollToSection();
 
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-        <Button
-          size="lg"
-          @click="scrollToSection('#contact')"
-        >
+        <Button size="lg" @click="scrollToSection('#contact')">
           Start a Project
         </Button>
-        <Button
-          size="lg"
-          variant="outline"
-          @click="scrollToSection('#products')"
-        >
+        <Button size="lg" variant="outline" @click="scrollToSection('#products')">
           View Products
         </Button>
       </div>
