@@ -26,7 +26,7 @@ const getProductName = (productId: string) => {
     <!-- Header with back button -->
     <div class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div class="container mx-auto px-4 md:px-6 py-4">
-        <Button variant="ghost" size="sm" @click="goBack" class="gap-2 text-muted-foreground hover:text-foreground">
+        <Button variant="ghost" size="sm" @click="goBack" class="gap-2 text-neutral-400 hover:text-foreground">
           <ArrowLeft class="w-4 h-4" />
           Back to Products
         </Button>
@@ -39,11 +39,11 @@ const getProductName = (productId: string) => {
         <!-- Indonesian Version -->
         <article class="prose prose-invert max-w-none space-y-6">
           <div class="mb-8 pb-8 border-b border-border">
-            <p class="text-sm text-muted-foreground mb-6">Bahasa Indonesia</p>
+            <p class="text-sm text-neutral-400 mb-6">Bahasa Indonesia</p>
             <h1 class="text-3xl md:text-4xl font-semibold mb-4">
               Kebijakan Privasi {{ getProductName(productId) }}
             </h1>
-            <p class="text-muted-foreground">
+            <p class="text-neutral-400">
               <strong>Berlaku sejak:</strong> 2026
               <br />
               <strong>Terakhir diperbarui:</strong> 2026
@@ -52,19 +52,19 @@ const getProductName = (productId: string) => {
 
           <div class="space-y-8">
             <section>
-              <p class="text-base leading-relaxed text-muted-foreground">
+              <p class="text-base leading-relaxed text-neutral-400">
                 Kebijakan Privasi ini menjelaskan bagaimana <strong>{{ getProductName(productId) }}</strong>, yang
                 dikembangkan oleh <strong>SudutKode</strong> ("kami", "pengembang"), mengumpulkan, menggunakan, dan
                 melindungi informasi Anda saat menggunakan aplikasi {{ getProductName(productId) }} ("Aplikasi").
               </p>
-              <p class="text-base leading-relaxed text-muted-foreground">
+              <p class="text-base leading-relaxed text-neutral-400">
                 Dengan menggunakan Aplikasi, Anda menyetujui ketentuan dalam Kebijakan Privasi ini.
               </p>
             </section>
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">1. Pengembang Aplikasi</h2>
-              <div class="space-y-2 text-muted-foreground">
+              <div class="space-y-2 text-neutral-400">
                 <p><strong>Nama:</strong> SudutKode</p>
                 <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
                 <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
@@ -73,7 +73,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">2. Data yang Kami Kumpulkan</h2>
-              <div class="space-y-4 text-muted-foreground">
+              <div class="space-y-4 text-neutral-400">
                 <div>
                   <h3 class="font-medium text-foreground mb-2">a. Data Akun</h3>
                   <ul class="list-disc list-inside space-y-1 text-sm">
@@ -128,7 +128,7 @@ const getProductName = (productId: string) => {
                       <th class="border border-border px-4 py-2 text-left font-medium">Tujuan</th>
                     </tr>
                   </thead>
-                  <tbody class="text-muted-foreground">
+                  <tbody class="text-neutral-400">
                     <tr>
                       <td class="border border-border px-4 py-2">Kode unik akun</td>
                       <td class="border border-border px-4 py-2">Mengidentifikasi akun Anda secara anonim</td>
@@ -148,14 +148,14 @@ const getProductName = (productId: string) => {
                   </tbody>
                 </table>
               </div>
-              <p class="text-sm text-muted-foreground pt-4">
+              <p class="text-sm text-neutral-400 pt-4">
                 Kami <strong>tidak</strong> menggunakan data Anda untuk iklan, profiling, atau tujuan komersial lainnya.
               </p>
             </section>
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">4. Penyimpanan dan Keamanan Data</h2>
-              <ul class="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+              <ul class="list-disc list-inside space-y-2 text-sm text-neutral-400">
                 <li>Semua data disimpan di server kami dengan enkripsi</li>
                 <li>Data hanya dapat diakses melalui akun Google yang terhubung</li>
                 <li>Email asli Anda tidak pernah disimpan dalam bentuk teks biasa (pseudonymization)</li>
@@ -167,7 +167,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">5. Retensi Data</h2>
-              <ul class="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+              <ul class="list-disc list-inside space-y-2 text-sm text-neutral-400">
                 <li>Data aktif disimpan selama akun Anda aktif</li>
                 <li>Setelah akun dihapus, seluruh data akan dihapus permanen dari server kami<strong>segera / secara
                     langsung</strong></li>
@@ -178,8 +178,8 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">6. Hak Pengguna</h2>
-              <p class="text-sm text-muted-foreground mb-3">Anda memiliki hak untuk:</p>
-              <ul class="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+              <p class="text-sm text-neutral-400 mb-3">Anda memiliki hak untuk:</p>
+              <ul class="list-disc list-inside space-y-2 text-sm text-neutral-400">
                 <li><strong>Mengakses</strong> data yang kami simpan tentang Anda</li>
                 <li><strong>Mengoreksi</strong> data yang tidak akurat</li>
                 <li><strong>Menghapus</strong> akun dan seluruh data melalui menu Pengaturan → Keluar / Hapus Akun</li>
@@ -191,10 +191,10 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">7. Layanan Pihak Ketiga</h2>
-              <p class="text-sm text-muted-foreground mb-3">
+              <p class="text-sm text-neutral-400 mb-3">
                 Aplikasi menggunakan layanan pihak ketiga berikut yang memiliki kebijakan privasi masing-masing:
               </p>
-              <ul class="space-y-2 text-sm text-muted-foreground">
+              <ul class="space-y-2 text-sm text-neutral-400">
                 <li>
                   <strong>Google Sign-In</strong> — untuk autentikasi akun
                   <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
@@ -212,7 +212,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">8. Kebijakan Anak-Anak</h2>
-              <p class="text-sm text-muted-foreground">
+              <p class="text-sm text-neutral-400">
                 Aplikasi {{ getProductName(productId) }} <strong>tidak ditujukan</strong> untuk pengguna di bawah usia
                 13 tahun. Kami tidak secara sadar mengumpulkan data dari anak-anak. Secara praktis, penggunaan UangKu
                 memerlukan akses ke rekening m-banking atau e-wallet aktif, yang umumnya hanya dapat dimiliki oleh
@@ -222,7 +222,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">9. Perubahan Kebijakan Privasi</h2>
-              <p class="text-sm text-muted-foreground">
+              <p class="text-sm text-neutral-400">
                 Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu. Perubahan signifikan akan diberitahukan
                 melalui notifikasi di dalam Aplikasi atau melalui email. Penggunaan Aplikasi setelah perubahan dianggap
                 sebagai persetujuan terhadap kebijakan yang diperbarui.
@@ -231,10 +231,10 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">10. Kontak</h2>
-              <p class="text-sm text-muted-foreground mb-3">
+              <p class="text-sm text-neutral-400 mb-3">
                 Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi kami:
               </p>
-              <div class="space-y-2 text-sm text-muted-foreground">
+              <div class="space-y-2 text-sm text-neutral-400">
                 <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
                 <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
               </div>
@@ -244,17 +244,17 @@ const getProductName = (productId: string) => {
 
         <!-- Divider -->
         <div class="py-8 border-y border-border">
-          <p class="text-sm text-muted-foreground text-center">—</p>
+          <p class="text-sm text-neutral-400 text-center">—</p>
         </div>
 
         <!-- English Version -->
         <article class="prose prose-invert max-w-none space-y-6">
           <div class="mb-8">
-            <p class="text-sm text-muted-foreground mb-6">English</p>
+            <p class="text-sm text-neutral-400 mb-6">English</p>
             <h1 class="text-3xl md:text-4xl font-semibold mb-4">
               Privacy Policy for {{ getProductName(productId) }}
             </h1>
-            <p class="text-muted-foreground">
+            <p class="text-neutral-400">
               <strong>Effective date:</strong> 2026
               <br />
               <strong>Last updated:</strong> 2026
@@ -263,19 +263,19 @@ const getProductName = (productId: string) => {
 
           <div class="space-y-8">
             <section>
-              <p class="text-base leading-relaxed text-muted-foreground">
+              <p class="text-base leading-relaxed text-neutral-400">
                 This Privacy Policy explains how <strong>{{ getProductName(productId) }}</strong>, developed by
                 <strong>SudutKode</strong> ("we", "developer"), collects, uses, and protects your information when you
                 use the {{ getProductName(productId) }} application ("App").
               </p>
-              <p class="text-base leading-relaxed text-muted-foreground">
+              <p class="text-base leading-relaxed text-neutral-400">
                 By using the App, you agree to the terms of this Privacy Policy.
               </p>
             </section>
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">1. Developer Information</h2>
-              <div class="space-y-2 text-muted-foreground">
+              <div class="space-y-2 text-neutral-400">
                 <p><strong>Name:</strong> SudutKode</p>
                 <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
                 <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
@@ -284,7 +284,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">2. Data We Collect</h2>
-              <div class="space-y-4 text-muted-foreground">
+              <div class="space-y-4 text-neutral-400">
                 <div>
                   <h3 class="font-medium text-foreground mb-2">a. Account Data</h3>
                   <ul class="list-disc list-inside space-y-1 text-sm">
@@ -339,7 +339,7 @@ const getProductName = (productId: string) => {
                       <th class="border border-border px-4 py-2 text-left font-medium">Purpose</th>
                     </tr>
                   </thead>
-                  <tbody class="text-muted-foreground">
+                  <tbody class="text-neutral-400">
                     <tr>
                       <td class="border border-border px-4 py-2">Account code</td>
                       <td class="border border-border px-4 py-2">Anonymously identify your account</td>
@@ -359,14 +359,14 @@ const getProductName = (productId: string) => {
                   </tbody>
                 </table>
               </div>
-              <p class="text-sm text-muted-foreground pt-4">
+              <p class="text-sm text-neutral-400 pt-4">
                 We do <strong>not</strong> use your data for advertising, profiling, or any other commercial purpose.
               </p>
             </section>
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">4. Data Storage and Security</h2>
-              <ul class="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+              <ul class="list-disc list-inside space-y-2 text-sm text-neutral-400">
                 <li>All data is stored on our servers with encryption</li>
                 <li>Data is only accessible through your connected Google account</li>
                 <li>Your actual email is never stored in plain text (pseudonymization)</li>
@@ -377,7 +377,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">5. Data Retention</h2>
-              <ul class="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+              <ul class="list-disc list-inside space-y-2 text-sm text-neutral-400">
                 <li>Active data is stored as long as your account is active</li>
                 <li>
                   After account deletion, all data will be permanently deleted from our servers
@@ -389,8 +389,8 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">6. Your Rights</h2>
-              <p class="text-sm text-muted-foreground mb-3">You have the right to:</p>
-              <ul class="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+              <p class="text-sm text-neutral-400 mb-3">You have the right to:</p>
+              <ul class="list-disc list-inside space-y-2 text-sm text-neutral-400">
                 <li><strong>Access</strong> the data we store about you</li>
                 <li><strong>Correct</strong> inaccurate data</li>
                 <li><strong>Delete</strong> your account and all data via Settings → Logout / Delete Account</li>
@@ -401,10 +401,10 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">7. Third-Party Services</h2>
-              <p class="text-sm text-muted-foreground mb-3">
+              <p class="text-sm text-neutral-400 mb-3">
                 The App uses the following third-party services, each with their own privacy policies:
               </p>
-              <ul class="space-y-2 text-sm text-muted-foreground">
+              <ul class="space-y-2 text-sm text-neutral-400">
                 <li>
                   <strong>Google Sign-In</strong> — for account authentication
                   <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
@@ -422,7 +422,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">8. Children's Policy</h2>
-              <p class="text-sm text-muted-foreground">
+              <p class="text-sm text-neutral-400">
                 The {{ getProductName(productId) }} App is <strong>not intended</strong> for users under the age of 13.
                 We do not knowingly collect data from children. In practice, using UangKu requires access to an active
                 m-banking account or e-wallet, which in Indonesia is generally only available to users aged 17 and above
@@ -432,7 +432,7 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">9. Changes to This Privacy Policy</h2>
-              <p class="text-sm text-muted-foreground">
+              <p class="text-sm text-neutral-400">
                 We may update this Privacy Policy at any time. Significant changes will be communicated via in-app
                 notification or email. Continued use of the App after changes constitutes acceptance of the updated
                 policy.
@@ -441,10 +441,10 @@ const getProductName = (productId: string) => {
 
             <section class="space-y-4">
               <h2 class="text-xl font-semibold">10. Contact</h2>
-              <p class="text-sm text-muted-foreground mb-3">
+              <p class="text-sm text-neutral-400 mb-3">
                 If you have any questions about this Privacy Policy, please contact us:
               </p>
-              <div class="space-y-2 text-sm text-muted-foreground">
+              <div class="space-y-2 text-sm text-neutral-400">
                 <p><strong>Email:</strong> <span class="text-amber-600">sudutkode@gmail.com</span></p>
                 <p><strong>Website:</strong> <span class="text-amber-600">https://sudutkode.web.app</span></p>
               </div>

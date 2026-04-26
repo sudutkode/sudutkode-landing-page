@@ -9,7 +9,7 @@ const { scrollToSection } = useScrollToSection();
   <section class="container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40">
     <div class="max-w-3xl mx-auto text-center space-y-8">
       <!-- Eyebrow -->
-      <div class="text-muted-foreground text-sm md:text-base tracking-wide">
+      <div class="text-neutral-400 text-sm md:text-base tracking-wide">
         Software House · Indonesia
       </div>
 
@@ -19,7 +19,7 @@ const { scrollToSection } = useScrollToSection();
       </h1>
 
       <!-- Sub-heading -->
-      <p class="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+      <p class="text-base md:text-lg text-neutral-400 leading-relaxed max-w-2xl mx-auto">
         From mobile apps to websites — SudutKode transforms ideas into real products with an experienced team.
       </p>
 
