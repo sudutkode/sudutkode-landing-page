@@ -11,7 +11,7 @@
       </h2>
 
       <!-- Description -->
-      <p class="text-base md:text-lg text-neutral-400 leading-relaxed">
+      <p class="text-base md:text-lg text-neutral-300 leading-relaxed">
         SudutKode is a software house born from the spirit of collaboration,
         built by professionals who believe that technology can be a real solution.
         We focus on creating digital products that are functional, aesthetic, and sustainable.

@@ -37,7 +37,7 @@ This document defines the conditions that must be met for each landing page sect
 
 - [x] Eyebrow text "Software House · Indonesia" displays above heading ✅
 - [x] Main heading displays with large Montserrat Semibold font ✅
-- [x] Sub-heading displays with `text-neutral-400` color ✅
+- [x] Sub-heading displays with `text-neutral-300` color ✅
 - [x] "Start a Project" button scrolls to Contact section when clicked ✅
 - [x] "View Products" button scrolls to Products section when clicked ✅
 - [x] No large images or illustrations — typography-focused layout ✅
@@ -89,7 +89,7 @@ This document defines the conditions that must be met for each landing page sect
   - [x] Desktop: Product header (~40%) on left, screenshots showcase (~60%) on right
   - [x] Mobile: Product header on top, screenshots showcase below (stacked layout)
   - [x] Each screenshot displays as portrait phone frame with rounded-2xl corners
-  - [x] Caption text displayed below each screenshot in text-neutral-400 text-sm
+  - [x] Caption text displayed below each screenshot in text-neutral-300 text-sm
   - [x] Carousel navigation buttons visible on desktop, hidden on mobile
 - [x] Product data stored in array for easy addition of new products
 - [x] Screenshots available in `public/` directory (flat structure, not nested) and display correctly (e.g., `/atur-keuangan-auth.jpg`)

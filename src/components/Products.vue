@@ -159,14 +159,14 @@ const openPrivacyPolicy = (productId: string) => {
                 </Badge>
               </CardHeader>
 
-              <p class="text-sm md:text-base text-neutral-400 leading-relaxed mb-6">
+              <p class="text-sm md:text-base text-neutral-300 leading-relaxed mb-6">
                 {{ product.description }}
               </p>
 
               <!-- Features -->
               <div v-if="product.features && product.features.length > 0" class="flex flex-col gap-3 mb-8">
                 <div v-for="(feature, idx) in product.features" :key="`feature-${idx}`"
-                  class="flex items-center gap-2 text-sm text-neutral-400">
+                  class="flex items-center gap-2 text-sm text-neutral-300">
                   <component :is="feature.icon" class="w-4 h-4 flex-shrink-0 text-foreground" />
                   <span>{{ feature.label }}</span>
                 </div>
@@ -185,7 +185,7 @@ const openPrivacyPolicy = (productId: string) => {
                   </span>
                 </Button>
                 <Button variant="ghost" size="lg" @click="openPrivacyPolicy(product.id)"
-                  class="flex-1 text-neutral-400 hover:text-foreground">
+                  class="flex-1 text-neutral-300 hover:text-foreground">
                   Privacy Policy
                 </Button>
               </div>
@@ -221,7 +221,7 @@ const openPrivacyPolicy = (productId: string) => {
                               class="h-80 md:h-96 w-full object-contain rounded-xl" />
                           </div>
                           <!-- Caption -->
-                          <p class="text-xs md:text-sm text-neutral-400 text-center leading-snug px-1">
+                          <p class="text-xs md:text-sm text-neutral-300 text-center leading-snug px-1">
                             {{ screenshot.caption }}
                           </p>
                         </div>

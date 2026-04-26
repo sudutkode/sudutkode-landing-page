@@ -48,7 +48,7 @@ onMounted(() => {
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-8">
         <button v-for="link in navLinks" :key="link.href" @click="scrollToSection(link.href)"
-          class="text-sm hover:text-foreground text-neutral-400 transition-colors">
+          class="text-sm hover:text-foreground text-neutral-300 transition-colors">
           {{ link.label }}
         </button>
       </nav>
@@ -70,7 +70,7 @@ onMounted(() => {
           <SheetContent side="right" class="w-[250px] flex flex-col">
             <nav class="flex flex-col gap-4 mt-8">
               <button v-for="link in navLinks" :key="link.href" @click="scrollToSection(link.href)"
-                class="text-left text-sm hover:text-foreground text-neutral-400 transition-colors">
+                class="text-left text-sm hover:text-foreground text-neutral-300 transition-colors">
                 {{ link.label }}
               </button>
             </nav>

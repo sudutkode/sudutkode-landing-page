@@ -43,7 +43,7 @@ const scrollToSection = (href: string) => {
         <div class="flex flex-col justify-between">
           <div>
             <h2 class="text-lg font-semibold mb-2">SudutKode</h2>
-            <p class="text-sm text-neutral-400">
+            <p class="text-sm text-neutral-300">
               Indonesian software house building digital products for businesses and humans.
             </p>
           </div>
@@ -53,7 +53,7 @@ const scrollToSection = (href: string) => {
         <div class="flex flex-col justify-center">
           <nav class="flex flex-col space-y-3">
             <button v-for="link in navLinks" :key="link.href" @click="scrollToSection(link.href)"
-              class="text-sm text-neutral-400 hover:text-foreground transition-colors text-left">
+              class="text-sm text-neutral-300 hover:text-foreground transition-colors text-left">
               {{ link.label }}
             </button>
           </nav>
@@ -63,7 +63,7 @@ const scrollToSection = (href: string) => {
         <div class="flex flex-col justify-center">
           <div class="flex gap-4">
             <a v-for="social in socialLinks" :key="social.label" :href="social.href" target="_blank"
-              rel="noopener noreferrer" class="text-neutral-400 hover:text-foreground transition-colors"
+              rel="noopener noreferrer" class="text-neutral-300 hover:text-foreground transition-colors"
               :aria-label="social.label">
               <component :is="social.icon" class="h-5 w-5" />
             </a>
@@ -74,7 +74,7 @@ const scrollToSection = (href: string) => {
       <!-- Divider -->
       <div class="border-t border-border pt-8">
         <!-- Copyright -->
-        <p class="text-sm text-neutral-400 text-center">
+        <p class="text-sm text-neutral-300 text-center">
           © 2026 SudutKode. All rights reserved.
         </p>
       </div>

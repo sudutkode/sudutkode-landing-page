@@ -109,7 +109,7 @@ const socialIcon = (socialName: string) => {
         </CardHeader>
 
         <CardContent v-for="(position, index) in positions" :key="index" :class="{
-          'pb-0 text-neutral-400 ': true,
+          'pb-0 text-neutral-300 ': true,
           'pb-4': index === positions.length - 1,
         }">
           {{ position }}<span v-if="index < positions.length - 1">,</span>
