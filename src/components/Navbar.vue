@@ -38,9 +38,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header
-    class="sticky top-0 z-50 w-full bg-background/80 backdrop-blur border-b border-border"
-  >
+  <header class="sticky top-0 z-50 w-full bg-background/80 backdrop-blur border-b border-border">
     <div class="flex justify-between items-center px-4 md:px-6 h-16 max-w-screen-xl mx-auto">
       <!-- Logo -->
       <a href="/" class="flex items-center">
@@ -49,22 +47,14 @@ onMounted(() => {
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-8">
-        <button
-          v-for="link in navLinks"
-          :key="link.href"
-          @click="scrollToSection(link.href)"
-          class="text-sm hover:text-foreground text-muted-foreground transition-colors"
-        >
+        <button v-for="link in navLinks" :key="link.href" @click="scrollToSection(link.href)"
+          class="text-sm hover:text-foreground text-neutral-400 transition-colors">
           {{ link.label }}
         </button>
       </nav>
 
       <!-- Desktop CTA Button -->
-      <Button
-        class="hidden md:inline-flex"
-        size="sm"
-        @click="scrollToSection('#contact')"
-      >
+      <Button class="hidden md:inline-flex" size="sm" @click="scrollToSection('#contact')">
         Contact Us
       </Button>
 
@@ -72,31 +62,20 @@ onMounted(() => {
       <div class="md:hidden">
         <Sheet v-model:open="isOpen">
           <SheetTrigger as-child>
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Open menu"
-            >
+            <Button variant="ghost" size="icon" aria-label="Open menu">
               <Menu class="h-5 w-5" />
             </Button>
           </SheetTrigger>
 
           <SheetContent side="right" class="w-[250px] flex flex-col">
             <nav class="flex flex-col gap-4 mt-8">
-              <button
-                v-for="link in navLinks"
-                :key="link.href"
-                @click="scrollToSection(link.href)"
-                class="text-left text-sm hover:text-foreground text-muted-foreground transition-colors"
-              >
+              <button v-for="link in navLinks" :key="link.href" @click="scrollToSection(link.href)"
+                class="text-left text-sm hover:text-foreground text-neutral-400 transition-colors">
                 {{ link.label }}
               </button>
             </nav>
 
-            <Button
-              class="mt-auto w-full"
-              @click="scrollToSection('#contact')"
-            >
+            <Button class="mt-auto w-full" @click="scrollToSection('#contact')">
               Contact Us
             </Button>
           </SheetContent>

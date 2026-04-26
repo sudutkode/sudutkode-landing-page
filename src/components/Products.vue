@@ -126,10 +126,7 @@ const openPrivacyPolicy = (productId: string) => {
 </script>
 
 <template>
-  <section
-    id="products"
-    class="container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40"
-  >
+  <section id="products" class="container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40">
     <div class="max-w-3xl mx-auto text-center mb-12">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
         Our Products
@@ -137,10 +134,7 @@ const openPrivacyPolicy = (productId: string) => {
     </div>
 
     <div class="space-y-12 max-w-7xl mx-auto">
-      <div
-        v-for="product in products"
-        :key="product.id"
-      >
+      <div v-for="product in products" :key="product.id">
         <!-- Card without overflow-hidden so arrows are not clipped -->
         <Card class="border-border">
           <div class="flex flex-col lg:flex-row gap-8 p-6 md:p-8">
@@ -150,12 +144,8 @@ const openPrivacyPolicy = (productId: string) => {
               <CardHeader class="p-0 mb-6">
                 <div class="mb-3">
                   <div class="flex items-center gap-3 mb-2">
-                    <img
-                      v-if="product.icon"
-                      :src="product.icon"
-                      :alt="`${product.name} icon`"
-                      class="w-10 h-10 rounded-lg"
-                    />
+                    <img v-if="product.icon" :src="product.icon" :alt="`${product.name} icon`"
+                      class="w-10 h-10 rounded-lg" />
                     <CardTitle class="text-2xl md:text-3xl">
                       {{ product.name }}
                     </CardTitle>
@@ -164,62 +154,38 @@ const openPrivacyPolicy = (productId: string) => {
                     {{ product.tagline }}
                   </CardDescription>
                 </div>
-                <Badge
-                  :variant="getBadgeVariant(product.status)"
-                  class="w-fit"
-                >
+                <Badge :variant="getBadgeVariant(product.status)" class="w-fit">
                   {{ product.platform }}
                 </Badge>
               </CardHeader>
 
-              <p class="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
+              <p class="text-sm md:text-base text-neutral-400 leading-relaxed mb-6">
                 {{ product.description }}
               </p>
 
               <!-- Features -->
-              <div
-                v-if="product.features && product.features.length > 0"
-                class="flex flex-col gap-3 mb-8"
-              >
-                <div
-                  v-for="(feature, idx) in product.features"
-                  :key="`feature-${idx}`"
-                  class="flex items-center gap-2 text-sm text-muted-foreground"
-                >
-                  <component
-                    :is="feature.icon"
-                    class="w-4 h-4 flex-shrink-0 text-foreground"
-                  />
+              <div v-if="product.features && product.features.length > 0" class="flex flex-col gap-3 mb-8">
+                <div v-for="(feature, idx) in product.features" :key="`feature-${idx}`"
+                  class="flex items-center gap-2 text-sm text-neutral-400">
+                  <component :is="feature.icon" class="w-4 h-4 flex-shrink-0 text-foreground" />
                   <span>{{ feature.label }}</span>
                 </div>
               </div>
 
               <!-- Download & Privacy Policy Buttons -->
               <div class="mt-auto flex flex-col sm:flex-row gap-3">
-                <Button
-                  size="lg"
-                  :disabled="isButtonDisabled(product.status)"
-                  :as-child="product.status === 'available'"
-                  class="flex-1"
-                >
-                  <a
-                    v-if="product.status === 'available'"
-                    :href="product.downloadUrl"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                <Button size="lg" :disabled="isButtonDisabled(product.status)"
+                  :as-child="product.status === 'available'" class="flex-1">
+                  <a v-if="product.status === 'available'" :href="product.downloadUrl" target="_blank"
+                    rel="noopener noreferrer">
                     {{ getButtonText(product.status) }}
                   </a>
                   <span v-else>
                     {{ getButtonText(product.status) }}
                   </span>
                 </Button>
-                <Button
-                  variant="ghost"
-                  size="lg"
-                  @click="openPrivacyPolicy(product.id)"
-                  class="flex-1 text-muted-foreground hover:text-foreground"
-                >
+                <Button variant="ghost" size="lg" @click="openPrivacyPolicy(product.id)"
+                  class="flex-1 text-neutral-400 hover:text-foreground">
                   Privacy Policy
                 </Button>
               </div>
@@ -239,30 +205,23 @@ const openPrivacyPolicy = (productId: string) => {
                   This keeps arrows fully visible without relying on overflow.
                 -->
                 <div class="relative px-10">
-                  <Carousel
-                    :opts="{
-                      align: 'start',
-                      loop: true,
-                    }"
-                    class="w-full"
-                  >
+                  <Carousel :opts="{
+                    align: 'start',
+                    loop: true,
+                  }" class="w-full">
                     <CarouselContent class="-ml-3">
-                      <CarouselItem
-                        v-for="(screenshot, idx) in product.screenshots"
+                      <CarouselItem v-for="(screenshot, idx) in product.screenshots"
                         :key="`${product.id}-screenshot-${idx}`"
-                        class="pl-3 basis-4/5 sm:basis-1/2 md:basis-2/5 lg:basis-2/5"
-                      >
+                        class="pl-3 basis-4/5 sm:basis-1/2 md:basis-2/5 lg:basis-2/5">
                         <div class="flex flex-col gap-3 h-full">
                           <!-- Phone frame -->
-                          <div class="bg-card rounded-2xl overflow-hidden border border-border p-2 flex items-center justify-center">
-                            <img
-                              :src="screenshot.src"
-                              :alt="`${product.name} - ${screenshot.caption}`"
-                              class="h-80 md:h-96 w-full object-contain rounded-xl"
-                            />
+                          <div
+                            class="bg-card rounded-2xl overflow-hidden border border-border p-2 flex items-center justify-center">
+                            <img :src="screenshot.src" :alt="`${product.name} - ${screenshot.caption}`"
+                              class="h-80 md:h-96 w-full object-contain rounded-xl" />
                           </div>
                           <!-- Caption -->
-                          <p class="text-xs md:text-sm text-muted-foreground text-center leading-snug px-1">
+                          <p class="text-xs md:text-sm text-neutral-400 text-center leading-snug px-1">
                             {{ screenshot.caption }}
                           </p>
                         </div>

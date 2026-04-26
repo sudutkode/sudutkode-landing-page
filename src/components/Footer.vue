@@ -36,17 +36,14 @@ const scrollToSection = (href: string) => {
 </script>
 
 <template>
-  <footer
-    id="footer"
-    class="border-t border-border"
-  >
+  <footer id="footer" class="border-t border-border">
     <div class="container mx-auto px-4 md:px-6 py-12 md:py-16">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <!-- Brand Section -->
         <div class="flex flex-col justify-between">
           <div>
             <h2 class="text-lg font-semibold mb-2">SudutKode</h2>
-            <p class="text-sm text-muted-foreground">
+            <p class="text-sm text-neutral-400">
               Indonesian software house building digital products for businesses and humans.
             </p>
           </div>
@@ -55,12 +52,8 @@ const scrollToSection = (href: string) => {
         <!-- Navigation Links -->
         <div class="flex flex-col justify-center">
           <nav class="flex flex-col space-y-3">
-            <button
-              v-for="link in navLinks"
-              :key="link.href"
-              @click="scrollToSection(link.href)"
-              class="text-sm text-muted-foreground hover:text-foreground transition-colors text-left"
-            >
+            <button v-for="link in navLinks" :key="link.href" @click="scrollToSection(link.href)"
+              class="text-sm text-neutral-400 hover:text-foreground transition-colors text-left">
               {{ link.label }}
             </button>
           </nav>
@@ -69,19 +62,10 @@ const scrollToSection = (href: string) => {
         <!-- Social Links -->
         <div class="flex flex-col justify-center">
           <div class="flex gap-4">
-            <a
-              v-for="social in socialLinks"
-              :key="social.label"
-              :href="social.href"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-muted-foreground hover:text-foreground transition-colors"
-              :aria-label="social.label"
-            >
-              <component
-                :is="social.icon"
-                class="h-5 w-5"
-              />
+            <a v-for="social in socialLinks" :key="social.label" :href="social.href" target="_blank"
+              rel="noopener noreferrer" class="text-neutral-400 hover:text-foreground transition-colors"
+              :aria-label="social.label">
+              <component :is="social.icon" class="h-5 w-5" />
             </a>
           </div>
         </div>
@@ -90,7 +74,7 @@ const scrollToSection = (href: string) => {
       <!-- Divider -->
       <div class="border-t border-border pt-8">
         <!-- Copyright -->
-        <p class="text-sm text-muted-foreground text-center">
+        <p class="text-sm text-neutral-400 text-center">
           © 2026 SudutKode. All rights reserved.
         </p>
       </div>
