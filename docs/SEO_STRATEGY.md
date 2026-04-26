@@ -144,7 +144,7 @@ konsultasi teknologi, software house terpercaya
   - Hero, About, Services, Contact (priority 0.9)
   - Products (priority 0.95 — highest conversion)
   - Team (priority 0.8)
-  - UangKu Privacy Policy (priority 0.7, yearly refresh)
+  - Atur Keuangan Privacy Policy (priority 0.7, yearly refresh)
 - Image references for rich snippets
 
 **Example:**
@@ -318,7 +318,7 @@ All visible text stays in English for world-class positioning:
 - **Hero Eyebrow:** "Software House · Indonesia" (only place with Indonesian identifier)
 - **About:** "SudutKode is a software house born from the spirit of collaboration..."
 - **Services:** Web Development, Mobile Apps, UI/UX Design, Technology Consulting
-- **Products:** "UangKu — Personal Finance Tracker"
+- **Products:** "Atur Keuangan — Personal Finance Tracker"
 - **Copy Tone:** Professional, premium, global
 
 #### SEO Keywords (Meta Only)

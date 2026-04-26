@@ -18,7 +18,7 @@ Building an official landing page for **SudutKode**, a new software house founde
 - Create a strong, professional, and modern first impression
 - Reflect SudutKode's technical quality through the page itself
 - Make potential clients confident to contact us
-- Interest potential UangKu users to download the app
+- Interest potential Atur Keuangan users to download the app
 
 ---
 
@@ -26,7 +26,7 @@ Building an official landing page for **SudutKode**, a new software house founde
 
 **Primary:** Small to medium business owners who need digital solutions — websites, apps, or technology consulting.
 
-**Secondary:** Individuals looking for a personal finance app (potential UangKu users).
+**Secondary:** Individuals looking for a personal finance app (potential Atur Keuangan users).
 
 ---
 
@@ -93,27 +93,27 @@ Permanent dark mode. No light/dark theme toggle.
 
 ## 7. Page Structure
 
-| Section  | Function                                     |
-| -------- | -------------------------------------------- |
-| Navbar   | Navigation + "Contact Us" CTA                |
-| Hero     | First impression — tagline + two CTAs        |
-| About    | Brief SudutKode story                        |
-| Services | 4 main services in card grid                 |
-| Products | Product showcase (UangKu + upcoming product) |
-| Team     | Team member photos and names                 |
-| Contact  | Contact channel with SudutKode               |
-| Footer   | Closing — navigation + social + copyright    |
+| Section  | Function                                            |
+| -------- | --------------------------------------------------- |
+| Navbar   | Navigation + "Contact Us" CTA                       |
+| Hero     | First impression — tagline + two CTAs               |
+| About    | Brief SudutKode story                               |
+| Services | 4 main services in card grid                        |
+| Products | Product showcase (Atur Keuangan + upcoming product) |
+| Team     | Team member photos and names                        |
+| Contact  | Contact channel with SudutKode                      |
+| Footer   | Closing — navigation + social + copyright           |
 
 ---
 
 ## 8. Required Assets
 
-| Asset                 | Format                       | Description                        |
-| --------------------- | ---------------------------- | ---------------------------------- |
-| SudutKode logo / icon | SVG or transparent PNG       | For navbar and favicon             |
-| UangKu screenshots    | PNG, portrait, min. 3 images | For Product section carousel       |
-| Team member photos    | JPG, square, min. 400×400px  | For Team section, consistent style |
-| Favicon               | ICO or PNG 32×32             | Replace `assets/icon.ico`          |
+| Asset                     | Format                       | Description                        |
+| ------------------------- | ---------------------------- | ---------------------------------- |
+| SudutKode logo / icon     | SVG or transparent PNG       | For navbar and favicon             |
+| Atur Keuangan screenshots | PNG, portrait, min. 3 images | For Product section carousel       |
+| Team member photos        | JPG, square, min. 400×400px  | For Team section, consistent style |
+| Favicon                   | ICO or PNG 32×32             | Replace `assets/icon.ico`          |
 
 ---
 

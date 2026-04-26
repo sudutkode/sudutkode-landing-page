@@ -42,48 +42,48 @@ interface Product {
 
 const products: Product[] = [
   {
-    id: "uangku",
-    name: "UangKu",
+    id: "atur-keuangan",
+    name: "Atur Keuangan",
     tagline: "Personal Finance Tracker",
     description:
       "A personal finance tracking app with visual reports, transaction categories, and automatic tracker. Manage your finances easily and efficiently.",
     platform: "Android",
-    icon: "/projects/uangku/uangku-icon.png",
+    icon: "/projects/atur-keuangan/icon.png",
     screenshots: [
       {
-        src: "/projects/uangku/uangku-auth.jpg",
+        src: "/projects/atur-keuangan/auth.jpg",
         caption: "Sign in securely with Google OAuth 2.0",
       },
       {
-        src: "/projects/uangku/uangku-intro.jpg",
+        src: "/projects/atur-keuangan/intro.jpg",
         caption: "Automatic transaction recording from banking & e-wallet notifications",
       },
       {
-        src: "/projects/uangku/uangku-access-request.jpg",
+        src: "/projects/atur-keuangan/access-request.jpg",
         caption: "Reads only banking & e-wallet notifications — no personal messages",
       },
       {
-        src: "/projects/uangku/uangku-initial-wallets.jpg",
+        src: "/projects/atur-keuangan/initial-wallets.jpg",
         caption: "Set up your wallets: cash, m-banking, and e-wallets in one place",
       },
       {
-        src: "/projects/uangku/uangku-transactions.jpg",
+        src: "/projects/atur-keuangan/transactions.jpg",
         caption: "Daily transaction history with income, expense, and balance summary",
       },
       {
-        src: "/projects/uangku/uangku-wallets.jpg",
+        src: "/projects/atur-keuangan/wallets.jpg",
         caption: "Monitor all wallet balances at a glance",
       },
       {
-        src: "/projects/uangku/uangku-report.jpg",
+        src: "/projects/atur-keuangan/report.jpg",
         caption: "Monthly spending reports with category breakdown",
       },
       {
-        src: "/projects/uangku/uangku-create-transaction.jpg",
+        src: "/projects/atur-keuangan/create-transaction.jpg",
         caption: "Manually add transactions with category, wallet, and date",
       },
       {
-        src: "/projects/uangku/uangku-settings.jpg",
+        src: "/projects/atur-keuangan/settings.jpg",
         caption: "Supports BCA, Livin, BRImo, Jago, SeaBank, GoPay, OVO, ShopeePay, DANA",
       },
     ],

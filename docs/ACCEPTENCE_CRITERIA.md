@@ -75,8 +75,8 @@ This document defines the conditions that must be met for each landing page sect
 - [x] Section has `id="products"` for navigation anchor
 - [x] "Our Products" heading displays
 - [x] `Products.vue` component created in `src/components/Products.vue`
-- [x] UangKu product displayed with:
-  - [x] Name "UangKu" and tagline "Personal Finance Tracker"
+- [x] Atur Keuangan product displayed with:
+  - [x] Name "Atur Keuangan" and tagline "Personal Finance Tracker"
   - [x] Brief app description
   - [x] "Android" platform badge
   - [x] Features highlight row with 3 key features (Bell icon + "Auto-record from notifications", Wallet icon + "Multi-wallet support", BarChart icon + "Monthly reports")
@@ -92,7 +92,7 @@ This document defines the conditions that must be met for each landing page sect
   - [x] Caption text displayed below each screenshot in text-neutral-400 text-sm
   - [x] Carousel navigation buttons visible on desktop, hidden on mobile
 - [x] Product data stored in array for easy addition of new products
-- [x] Screenshots available in `public/` directory (flat structure, not nested) and display correctly (e.g., `/uangku-auth.jpg`)
+- [x] Screenshots available in `public/` directory (flat structure, not nested) and display correctly (e.g., `/atur-keuangan-auth.jpg`)
 - [x] Responsive display on mobile and desktop
 
 ---
@@ -183,7 +183,7 @@ This document defines the conditions that must be met for each landing page sect
 - [x] JSON-LD Structured Data (4 Schemas):
   - [x] LocalBusiness Schema (location: Papua Barat, Indonesia)
   - [x] Organization Schema (social profiles, founding date 2024)
-  - [x] SoftwareApplication Schema (UangKu app details)
+  - [x] SoftwareApplication Schema (Atur Keuangan app details)
   - [x] BreadcrumbList Schema (navigation hierarchy)
 - [x] Search Engine Files:
   - [x] `robots.txt` created (28 lines) - crawl directives, sitemap link

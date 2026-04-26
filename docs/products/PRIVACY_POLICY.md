@@ -1,6 +1,6 @@
-# Kebijakan Privasi UangKu
+# Kebijakan Privasi Atur Keuangan
 
-## Privacy Policy UangKu
+## Privacy Policy Atur Keuangan
 
 **Berlaku sejak / Effective date:** 2026
 **Terakhir diperbarui / Last updated:** 2026
@@ -9,7 +9,7 @@
 
 ## BAHASA INDONESIA
 
-Kebijakan Privasi ini menjelaskan bagaimana **UangKu**, yang dikembangkan oleh **SudutKode** ("kami", "pengembang"), mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan aplikasi UangKu ("Aplikasi").
+Kebijakan Privasi ini menjelaskan bagaimana **Atur Keuangan**, yang dikembangkan oleh **SudutKode** ("kami", "pengembang"), mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan aplikasi Atur Keuangan ("Aplikasi").
 
 Dengan menggunakan Aplikasi, Anda menyetujui ketentuan dalam Kebijakan Privasi ini.
 
@@ -38,7 +38,7 @@ Dengan menggunakan Aplikasi, Anda menyetujui ketentuan dalam Kebijakan Privasi i
 
 #### c. Data Notifikasi
 
-- UangKu membaca notifikasi dari aplikasi m-banking dan e-wallet yang Anda pilih untuk mendeteksi transaksi secara otomatis
+- Atur Keuangan membaca notifikasi dari aplikasi m-banking dan e-wallet yang Anda pilih untuk mendeteksi transaksi secara otomatis
 - Kami **tidak** membaca notifikasi dari aplikasi lain (WhatsApp, SMS, email, dll.)
 - Kami **tidak** menyimpan teks notifikasi mentah — hanya data transaksi yang berhasil diekstrak
 
@@ -103,7 +103,7 @@ Aplikasi menggunakan layanan pihak ketiga berikut yang memiliki kebijakan privas
 
 ### 8. Kebijakan Anak-Anak
 
-Aplikasi UangKu **tidak ditujukan** untuk pengguna di bawah usia 13 tahun. Kami tidak secara sadar mengumpulkan data dari anak-anak. Jika Anda mengetahui bahwa anak di bawah 13 tahun telah menggunakan Aplikasi ini, harap hubungi kami agar kami dapat menghapus data tersebut.
+Aplikasi Atur Keuangan **tidak ditujukan** untuk pengguna di bawah usia 13 tahun. Kami tidak secara sadar mengumpulkan data dari anak-anak. Jika Anda mengetahui bahwa anak di bawah 13 tahun telah menggunakan Aplikasi ini, harap hubungi kami agar kami dapat menghapus data tersebut.
 
 ---
 
@@ -126,7 +126,7 @@ Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi ka
 
 ## ENGLISH VERSION
 
-This Privacy Policy explains how **UangKu**, developed by **SudutKode** ("we", "developer"), collects, uses, and protects your information when you use the UangKu application ("App").
+This Privacy Policy explains how **Atur Keuangan**, developed by **SudutKode** ("we", "developer"), collects, uses, and protects your information when you use the Atur Keuangan application ("App").
 
 By using the App, you agree to the terms of this Privacy Policy.
 
@@ -155,7 +155,7 @@ By using the App, you agree to the terms of this Privacy Policy.
 
 #### c. Notification Data
 
-- UangKu reads notifications from m-banking and e-wallet apps you select, to automatically detect transactions
+- Atur Keuangan reads notifications from m-banking and e-wallet apps you select, to automatically detect transactions
 - We do **not** read notifications from other apps (WhatsApp, SMS, email, etc.)
 - We do **not** store raw notification text — only successfully extracted transaction data
 
@@ -220,7 +220,7 @@ The App uses the following third-party services, each with their own privacy pol
 
 ### 8. Children's Policy
 
-The UangKu App is **not intended** for users under the age of 13. We do not knowingly collect data from children. If you are aware that a child under 13 has used this App, please contact us so we can delete that data.
+The Atur Keuangan App is **not intended** for users under the age of 13. We do not knowingly collect data from children. If you are aware that a child under 13 has used this App, please contact us so we can delete that data.
 
 ---
 

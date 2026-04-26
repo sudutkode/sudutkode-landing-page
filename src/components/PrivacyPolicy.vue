@@ -15,7 +15,7 @@ const goBack = () => {
 
 const getProductName = (productId: string) => {
   const products: Record<string, string> = {
-    uangku: 'UangKu',
+    "atur-keuangan": 'Atur Keuangan',
   }
   return products[productId] || productId
 }
@@ -96,7 +96,8 @@ const getProductName = (productId: string) => {
                   <h3 class="font-medium text-foreground mb-2">c. Data Notifikasi</h3>
                   <ul class="list-disc list-inside space-y-1 text-sm">
                     <li>
-                      UangKu membaca notifikasi dari aplikasi m-banking dan e-wallet yang Anda pilih untuk mendeteksi
+                      Atur Keuangan membaca notifikasi dari aplikasi m-banking dan e-wallet yang Anda pilih untuk
+                      mendeteksi
                       transaksi secara otomatis
                     </li>
                     <li>Kami <strong>tidak</strong> membaca notifikasi dari aplikasi lain (WhatsApp, SMS, email, dll.)
@@ -214,7 +215,8 @@ const getProductName = (productId: string) => {
               <h2 class="text-xl font-semibold">8. Kebijakan Anak-Anak</h2>
               <p class="text-sm text-neutral-400">
                 Aplikasi {{ getProductName(productId) }} <strong>tidak ditujukan</strong> untuk pengguna di bawah usia
-                13 tahun. Kami tidak secara sadar mengumpulkan data dari anak-anak. Secara praktis, penggunaan UangKu
+                13 tahun. Kami tidak secara sadar mengumpulkan data dari anak-anak. Secara praktis, penggunaan Atur
+                Keuangan
                 memerlukan akses ke rekening m-banking atau e-wallet aktif, yang umumnya hanya dapat dimiliki oleh
                 pengguna berusia 17 tahun ke atas sesuai ketentuan perbankan di Indonesia.
               </p>
@@ -308,7 +310,8 @@ const getProductName = (productId: string) => {
                   <h3 class="font-medium text-foreground mb-2">c. Notification Data</h3>
                   <ul class="list-disc list-inside space-y-1 text-sm">
                     <li>
-                      UangKu reads notifications from m-banking and e-wallet apps you select, to automatically detect
+                      Atur Keuangan reads notifications from m-banking and e-wallet apps you select, to automatically
+                      detect
                       transactions
                     </li>
                     <li>We do <strong>not</strong> read notifications from other apps (WhatsApp, SMS, email, etc.)</li>
@@ -424,7 +427,8 @@ const getProductName = (productId: string) => {
               <h2 class="text-xl font-semibold">8. Children's Policy</h2>
               <p class="text-sm text-neutral-400">
                 The {{ getProductName(productId) }} App is <strong>not intended</strong> for users under the age of 13.
-                We do not knowingly collect data from children. In practice, using UangKu requires access to an active
+                We do not knowingly collect data from children. In practice, using Atur Keuangan requires access to an
+                active
                 m-banking account or e-wallet, which in Indonesia is generally only available to users aged 17 and above
                 in accordance with local banking regulations.
               </p>

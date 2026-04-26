@@ -18,7 +18,7 @@ SudutKode is a newly established software house, built by a group of professiona
 
 - Introduce SudutKode as a professional and trustworthy software house
 - Clearly and concisely showcase offered services
-- Promote the first product, UangKu, to potential users
+- Promote the first product, Atur Keuangan, to potential users
 - Introduce team members to build trust
 - Provide an easy contact path for potential clients
 
@@ -29,7 +29,7 @@ SudutKode is a newly established software house, built by a group of professiona
 | Segment                         | Description                                                |
 | ------------------------------- | ---------------------------------------------------------- |
 | Potential business clients      | Business owners or organizations needing digital solutions |
-| Potential UangKu users          | Individuals looking for a personal finance tracking app    |
+| Potential Atur Keuangan users   | Individuals looking for a personal finance tracking app    |
 | Potential partners or investors | Parties interested in learning more about SudutKode        |
 | Potential recruits              | Developers or designers interested in joining              |
 
@@ -41,7 +41,7 @@ SudutKode is a newly established software house, built by a group of professiona
 
 - Single-page landing page with multiple sections
 - Sections: Navbar, Hero, About, Services, Products, Team, Contact, Footer
-- UangKu product showcase with screenshots and download link
+- Atur Keuangan product showcase with screenshots and download link
 - Contact form or contact information
 - Responsive design (mobile & desktop)
 - Permanent dark mode
@@ -145,7 +145,7 @@ SudutKode is a newly established software house, built by a group of professiona
 
 ## 9. Displayed Products
 
-### UangKu (v1.0.0)
+### Atur Keuangan (v1.0.0)
 
 - Type: Mobile Application
 - Platform: Android
@@ -175,10 +175,10 @@ SudutKode is a newly established software house, built by a group of professiona
 
 ## 11. Dependencies & Risks
 
-| Item                 | Description                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------- |
-| UangKu screenshots   | Required for Products section — must be prepared by team                               |
-| Team member photos   | Required for Team section — must be prepared by each member                            |
-| UangKu download link | Currently Google Drive, needs to be replaced with Play Store                           |
-| Brand accent color   | Not final yet — landing page temporarily monochrome                                    |
-| Play Protect warning | APK distributed outside Play Store will show warning — solution: publish to Play Store |
+| Item                        | Description                                                                            |
+| --------------------------- | -------------------------------------------------------------------------------------- |
+| Atur Keuangan screenshots   | Required for Products section — must be prepared by team                               |
+| Team member photos          | Required for Team section — must be prepared by each member                            |
+| Atur Keuangan download link | Currently Google Drive, needs to be replaced with Play Store                           |
+| Brand accent color          | Not final yet — landing page temporarily monochrome                                    |
+| Play Protect warning        | APK distributed outside Play Store will show warning — solution: publish to Play Store |

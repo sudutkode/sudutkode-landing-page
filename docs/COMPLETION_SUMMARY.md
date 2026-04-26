@@ -60,7 +60,7 @@
 - ✅ **Structured Data** (4 JSON-LD scripts):
   - LocalBusiness (location: Papua Barat, Indonesia)
   - Organization (brand + social links)
-  - SoftwareApplication (UangKu app)
+  - SoftwareApplication (Atur Keuangan app)
   - BreadcrumbList (navigation)
 - ✅ **Performance Tags** (preconnect to Google Fonts)
 - ✅ **Security Headers** (production setup)
@@ -197,7 +197,7 @@ Total:         ~76 kB (gzipped) = Excellent for mobile
 
 - ✅ LocalBusiness (enables Knowledge Panel, local search)
 - ✅ Organization (brand credibility, social links)
-- ✅ SoftwareApplication (product information for UangKu)
+- ✅ SoftwareApplication (product information for Atur Keuangan)
 - ✅ BreadcrumbList (navigation structure)
 
 ### Technical SEO

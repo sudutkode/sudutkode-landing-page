@@ -112,7 +112,7 @@ public/
 ├── robots.txt                 # Search engine crawling rules
 ├── sitemap.xml                # XML sitemap for discovery
 ├── projects/                  # Product images
-│   └── uangku/                # UangKu app screenshots
+│   └── atur-keuangan/                # Atur Keuangan app screenshots
 └── team/                      # Team member photos
 
 docs/
@@ -194,12 +194,12 @@ Uses **Montserrat** from Google Fonts for all text including brand name.
 
 ## Featured Products
 
-### UangKu
+### Atur Keuangan
 
 - Category: Mobile App — Personal Finance Tracker
 - Platform: Android
 - Status: Available
-- Screenshots: `public/images/uangku/`
+- Screenshots: `public/images/atur-keuangan/`
 
 > The second product is in development and will be added to the Products section when ready.
 
@@ -223,4 +223,4 @@ bun run build
 
 - Dark mode is permanently active — the `dark` class is added to the `<html>` tag in `index.html`
 - Unused template components (`Pricing`, `FAQ`, `Sponsors`, etc.) are not deleted from disk, just not imported in `App.vue`
-- UangKu download link currently uses Google Drive. Final target: Google Play Store
+- Atur Keuangan download link currently uses Google Drive. Final target: Google Play Store

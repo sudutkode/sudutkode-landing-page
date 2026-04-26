@@ -167,7 +167,7 @@ The SudutKode landing page has been **fully optimized for bilingual Google Searc
      ☑️ <xhtml:link rel="alternate" hreflang="x-default" href="..." />
    - All lastmod: 2026-04-12 (current)
    - Priority weights: 1.0 (home), 0.95 (products), 0.9 (sections), 0.7 (privacy)
-   - Image references: UangKu icon with bilingual title
+   - Image references: Atur Keuangan icon with bilingual title
    - changefreq: weekly (home, products), monthly (sections), yearly (privacy)
 ```
 
@@ -683,11 +683,11 @@ This strategy allows SudutKode to:
 ✅ contactPoint: Business contact
 ```
 
-**SoftwareApplication Schema (UangKu):**
+**SoftwareApplication Schema (Atur Keuangan):**
 
 ```json
 ✅ @type: SoftwareApplication
-✅ name: UangKu
+✅ name: Atur Keuangan
 ✅ description: Finance tracker
 ✅ applicationCategory: FinanceApplication
 ✅ operatingSystem: Android
@@ -736,12 +736,12 @@ This strategy allows SudutKode to:
 ✅ Size: 60 lines
 ✅ Contains:
    - 8 URLs (home + all sections + privacy policy)
-   - Image references (UangKu icon)
+   - Image references (Atur Keuangan icon)
    - lastmod dates (current)
    - changefreq: weekly/monthly/yearly
    - priority: 0.7-1.0
    - Image sitemap data
-✅ Includes privacy policy: /uangku/privacy-policy
+✅ Includes privacy policy: /atur-keuangan/privacy-policy
 ```
 
 ---
