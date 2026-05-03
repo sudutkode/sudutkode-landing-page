@@ -87,7 +87,7 @@ const products: Product[] = [
         caption: "Supports BCA, Livin, BRImo, Jago, SeaBank, GoPay, OVO, ShopeePay, DANA",
       },
     ],
-    downloadUrl: "https://expo.dev/artifacts/eas/i4XJixtKxwVsTyW5djGnkK.apk",
+    downloadUrl: "https://expo.dev/artifacts/eas/jL8zV9B36q9hG61N7E1zhh.apk",
     status: "available",
     features: [
       {
